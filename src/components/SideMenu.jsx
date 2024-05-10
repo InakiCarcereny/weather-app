@@ -1,6 +1,0 @@
-export function SideMenu () {
-  
-  return (
-    
-  )
-}
