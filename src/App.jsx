@@ -48,7 +48,7 @@ function App() {
     <>
       <Header city={city} setCity={setCity} fetchUrl={fetchUrl} handleSubmit={handleSubmit} changeCity={changeCity}/>
 
-      <MainContent loading={loading} dataClima={dataClima}/>
+      {loading ? <p className='text-white font-semibold text-center py-4 text-xl'>Loading...</p> : <MainContent dataClima={dataClima}/>}
 
       <Footer dataClima={dataClima}/>
     </>

@@ -9,7 +9,6 @@ export function MainContent ({ loading, dataClima }) {
             <div
             className='flex items-center justify-center flex-col gap-2' 
             key={dataClima.id}>
-              {loading && <p className='text-white font-semibold text-xl mb-4'>Loading...</p>}
               <h1 className='text-white font-semibold text-4xl'>{dataClima.name}</h1>
               <div className="flex items-center gap-10">
                 <p className='text-white font-semibold text-8xl'>{Math.floor(dataClima.main.temp - converse)}°<span className="text-6xl"> C</span></p>
