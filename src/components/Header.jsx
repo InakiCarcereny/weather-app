@@ -3,14 +3,14 @@ import { SearchIcon } from '../icons/SearchIcon'
 export function Header ({ city, handleSubmit, changeCity}) {
 
   return (
-    <header className='flex items-center justify-center mx-auto mt-20 bg-[#3a4874] max-w-[1200px] h-[60px] rounded-3xl drop-shadow-xl '>
+    <header className='flex items-center justify-center mx-auto mt-20 bg-gray-50 max-w-[1200px] h-[60px] rounded-3xl drop-shadow-xl '>
     <form className='flex items-center justify-center gap-12'
     onSubmit={handleSubmit}>
       <span className='flex items-center justify-center gap-2'>
         <input
         placeholder='Barcelona, Buenos Aires, Amsterdam...' 
         className='w-[800px] h-[30px] border-none rounded-xl
-        px-2 py-2 text-gray-600 font-semibold' 
+        px-2 py-2 text-gray-600 font-semibold focus:outline-none bg-transparent' 
         type="search" 
         value={city}
         onChange={changeCity}/>
